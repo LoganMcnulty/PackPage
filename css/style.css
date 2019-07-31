@@ -2,6 +2,10 @@ body {
     color: #222222;
     font-size: 1em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1em;
+    border-color: #1F3731;  
 }
 
 .content-footer,
@@ -11,10 +15,18 @@ body {
 }
 
 .masthead {
-  padding: 6em 0;
-  background-image: url('../img/code.jpg');
-  background-size: cover;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  margin-right: 8em;
+  margin-left: 8em;
+  background-image: linear-gradient(to right, #ffb700, #1F3731);
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  line-height: 90px;
   background-repeat: no-repeat;
+  -webkit-text-stroke: 3px grey;
+  border-radius: 25px;
 }
 
 .masthead-intro {
@@ -26,17 +38,87 @@ body {
 .masthead-heading {
     margin-top: -0.2em;
     font-weight: bold;
-    font-size: 6em;
+    font-size: 2em;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #1F3731;
+    -webkit-text-stroke: 3px #ffb700;
+    text-decoration: none;
+}
+
+.schedule-heading {
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+    color: #ffb700;
+    background-color: #1F3731;
+    padding: 1em 0;
+    border-radius: 25px;
+    line-height:5%;
+    border-style: solid;
+}
+
+table {
+  border-collapse: collapse;
+  position: center;
+}
+
+th {
+  background-color: #1F3731;
+  color: #ffb700;
+  text-align: center;
+  font-size: 30px;
+}
+
+img {
+  height:40px;
+  width:55px;
+  padding: 3px;
+}
+
+td {
+  font-weight: bold;
+  font-size: 20px;
+  padding:15px;
+}
+
+table, th, td {
+  padding-top: 1em;
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+.table-headers {
+  background-color: #1F3731;
+  color: #ffb700;
+  font-size: 2em;
+  border-radius: 25px;
+  border-style: solid;
+}
+
+.date {
+  text-align: center;
+}
+
+.Link1 {
+  color: #1F3731;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Link2 {
+  color: #ffb700;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .details {
     max-width: 38em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
 }
 
 .details > p {
@@ -55,16 +137,22 @@ section > h1 {
 }
 
 #footer {
-  padding: 20px 0;
+  padding: 5px 0;
   text-align: center;
-  background-color: #111111;
+  background-color:#1F3731;
   text-decoration: none;
+  margin-right: 40em;
+  margin-left: 40em;
+  border-radius: 25px;
+  margin-bottom: 2em;
 }
 
 #footer a {
-  color: #ffffff;
+  color: white;
+  font-size: 20px;
+  padding: 1em;
 }
-.social > li {
-  display: inline-block;
-  margin: 0 5px;
+
+#footer:hover{
+  background-color:#ffb700; 
 }
